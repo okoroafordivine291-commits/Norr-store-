@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useCart } from '../context/CartContext.jsx'
+import { useCart } from '/CartContext.jsx'
 
 export default function Navbar() {
   const { count } = useCart()
