@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { fetchProducts } from '../services/api.js'
-import ProductCard from '../components/ProductCard.jsx'
-import { ProductGridSkeleton } from '../components/Skeleton.jsx'
+import { fetchProducts } from '/api.js'
+import ProductCard from '/ProductCard.jsx'
+import { ProductGridSkeleton } from '/Skeleton.jsx'
 
 export default function Home() {
   const [featured, setFeatured] = useState([])
