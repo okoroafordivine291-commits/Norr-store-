@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF9F6;
+  color: #1C1B19;
+}
+
+/* signature: perforated price-tag edge */
+.price-tag {
+  position: relative;
+  background: #FAF9F6;
+  border: 1px solid #1C1B19;
+}
+.price-tag::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #FAF9F6;
+  border: 1px solid #1C1B19;
+  border-radius: 50%;
+}
+
+:focus-visible {
+  outline: 2px solid #B5654A;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
