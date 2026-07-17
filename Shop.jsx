@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { fetchProducts, fetchCategories } from '../services/api.js'
-import ProductCard from '../components/ProductCard.jsx'
-import FilterSidebar from '../components/FilterSidebar.jsx'
-import { ProductGridSkeleton } from '../components/Skeleton.jsx'
+import { fetchProducts, fetchCategories } from '/api.js'
+import ProductCard from '/ProductCard.jsx'
+import FilterSidebar from '/FilterSidebar.jsx'
+import { ProductGridSkeleton } from '/Skeleton.jsx'
 
 export default function Shop() {
   const [searchParams] = useSearchParams()
