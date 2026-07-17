@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useCart } from '../context/CartContext.jsx'
+import { useCart } from '/CartContext.jsx'
 
 export default function ProductCard({ product }) {
   const { addItem } = useCart()
