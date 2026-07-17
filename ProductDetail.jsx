@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { fetchProduct } from '../services/api.js'
-import { useCart } from '../context/CartContext.jsx'
-import Toast from '../components/Toast.jsx'
+import { fetchProduct } from '/api.js'
+import { useCart } from '/CartContext.jsx'
+import Toast from '/Toast.jsx'
 
 export default function ProductDetail() {
   const { id } = useParams()
